@@ -1,4 +1,4 @@
-
+import Weather from './Weather'
 import './App.css';
 
 function App() {
@@ -6,6 +6,7 @@ function App() {
     <div className="App">
       <div className='container'>
          <h1>hello</h1>
+         <Weather/>
           <footer>
           This project was coded by 
            <a href='/'> Maryna Holinka </a>

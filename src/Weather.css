@@ -7,11 +7,12 @@ body {
     border-radius: 5px;
     margin: 21px auto;
     max-width: 600px;
+color: rgb(13, 13, 49);
 }
 .Weather h1 {
-color: rgb(66, 66, 66);
+
 font-size: 24px;
-font-weight: 100;
+font-weight: 400;
 line-height: 29px;
 }
 .tear {
@@ -19,4 +20,12 @@ line-height: 29px;
 }
 .wind {
     color: blue;
+}
+.Weather h2 {
+   
+    
+    font-size: 20px;
+    font-weight: 400;
+   text-align: center;
+
 }

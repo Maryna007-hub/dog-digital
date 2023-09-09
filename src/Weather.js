@@ -1,4 +1,5 @@
 import React from 'react'
+
 import './Weather.css';
 import {
     UilTear,
@@ -31,10 +32,10 @@ import {
     <div class="col-6">
     <ul>
         <li>
-        <UilTear size={19}/>  Humidity: 23%
+        <UilTear size={19} className='tear'/>  Humidity: 23%
         </li>
         <li>
-            Wind: 12 km/h
+        <UilWind size={19} className='wind'/>  Wind: 12 km/h
         </li>
     </ul>
     </div>

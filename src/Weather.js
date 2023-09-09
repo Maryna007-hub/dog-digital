@@ -1,5 +1,9 @@
 import React from 'react'
 import './Weather.css';
+import {
+    UilTear,
+    UilWind,
+  } from '@iconscout/react-unicons';
 
  export default function Weather() {
   return (
@@ -27,7 +31,7 @@ import './Weather.css';
     <div class="col-6">
     <ul>
         <li>
-            Humidity: 23%
+        <UilTear size={19}/>  Humidity: 23%
         </li>
         <li>
             Wind: 12 km/h

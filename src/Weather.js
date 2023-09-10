@@ -6,6 +6,7 @@ import {
     UilWind, UilLocationPoint
   } from '@iconscout/react-unicons';
   import axios from 'axios';
+  import FormattedDate from './FormattedDate';
 
  export default function Weather(props) {
     const [weatherData, setWeatherData ] = useState({ ready: false });
@@ -21,7 +22,7 @@ setWeatherData({
   iconUrl: "https://openweathermap.org/img/wn/01n@2x.png",
   description: response.data.weather[0].description,
   city: response.data.name,
-  date: 'Monday 23:08'
+  date: new Date(response.data.dt * 1000)
 })
   
 }
@@ -50,7 +51,7 @@ if (weatherData.ready) {
       </form>
         <h1>{weatherData.city}</h1> 
    <ul>
-    <li></li>
+    <li><FormattedDate date={weatherData.date}/></li>
     <li className='text-capitalize'>{weatherData.description}</li>
    </ul>
    <div className="row mt-3">

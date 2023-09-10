@@ -7,6 +7,7 @@ import {
   } from '@iconscout/react-unicons';
   import axios from 'axios';
   import FormattedDate from './FormattedDate';
+  import  WeatherInfo  from "./WeatherInfo";
 
  export default function Weather(props) {
     const [weatherData, setWeatherData ] = useState({ ready: false });
@@ -49,6 +50,7 @@ if (weatherData.ready) {
 
         </div>
       </form>
+      <WeatherInfo/>
         <h1>{weatherData.city}</h1> 
    <ul>
     <li><FormattedDate date={weatherData.date}/></li>

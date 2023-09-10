@@ -76,14 +76,7 @@ if (weatherData.ready) {
         </li>
     </ul>
     </div>
-      <h2>Daily Temperature Evaluation</h2>
-           <div className='row'>
-               <div className='col'>
-                 Chart
-               </div>
-           </div>
-
-  </div>
+    </div>
   </div>
 )
 } else {

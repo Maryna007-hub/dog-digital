@@ -57,3 +57,6 @@ list-style: none;
     line-height: 1;
     margin-left: 2px;
 }
+.Weather a {
+    text-decoration: none;
+}

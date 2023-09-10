@@ -44,7 +44,10 @@ list-style: none;
    font-weight: bold; 
    font-size: 46px;
    font-weight: 500;
-   
+   color: rgb(17, 17, 51);
+}
+.Weather canvas {
+    margin: 0 auto;
 }
 .Weather .unit {
     font-size: 16px;

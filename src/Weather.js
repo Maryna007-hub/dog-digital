@@ -20,7 +20,7 @@ setWeatherData({
   temperature: response.data.main.temp, 
   wind: response.data.wind.speed,
   humidity: response.data.main.humidity,
-  iconUrl: "https://openweathermap.org/img/wn/01n@2x.png",
+  iconUrl: `https://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`,
   description: response.data.weather[0].description,
   city: response.data.name,
   date: new Date(response.data.dt * 1000)

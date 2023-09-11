@@ -17,6 +17,7 @@ function day() {
     let day = date.getDay();
     
     let days = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
+    
     return days[day];
 }
 

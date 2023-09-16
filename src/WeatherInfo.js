@@ -33,7 +33,7 @@ export default  function WeatherInfo(props) {
           <UilTear size={19} className='tear'/>  Humidity: {props.data.humidity}%
           </li>
           <li>
-          <UilWind size={19} className='wind'/>  Wind: {props.data.wind.speed} km/h
+          <UilWind size={19} className='wind'/>  Wind: {Math.round(props.data.wind)} km/h
            </li>
            </ul>
         </div>

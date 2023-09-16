@@ -5,15 +5,14 @@ import {
     UilLocationPoint
   } from '@iconscout/react-unicons';
   import axios from 'axios';
- 
-  import  WeatherInfo  from "./WeatherInfo";
+ import  WeatherInfo  from "./WeatherInfo";
 
  export default function Weather(props) {
     const [weatherData, setWeatherData ] = useState({ ready: false });
  const [city, setCity] = useState(props.defaultCity);
 
  function handleResponse(response) {
-    console.log(response.data);
+   // console.log(response.data);
 
 setWeatherData({
     ready: true,
@@ -73,7 +72,7 @@ if (weatherData.ready) {
         <hr/>
       </div>
      </div>
-     <WeatherForecast coordinates ={weatherData.coordinates}/>
+     <WeatherForecast coordinates={weatherData.coordinates}/>
      
   </div>
 )

@@ -11,5 +11,5 @@
 - Forecast layout, create WeatherForecast.js, css, 14min
 - API forecast, create API call forecast coordinates(available only 3 hour API call), 14min
 - Forecast 1 day, create WeatherForecastDay.js, function(props), change {forecast[0]} to {props.data}, 25min
-- Forecast 5 days,  duplicate <div>, using index+8(3 hour forecast API call available), 10min
+- Forecast 5 days,  duplicate (<div>), using index+8(3 hour forecast API call available), 10min
 - Refresh Forecast 5 days, add useEffect to WeatherForecast.js, arrow-function to update if props has changed, 

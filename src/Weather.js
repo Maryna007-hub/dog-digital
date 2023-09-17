@@ -1,7 +1,7 @@
 import React , { useState } from 'react';
 import WeatherForecast from './WeatherForecast';
 import './Weather.css';
-//import { UilLocationPoint } from '@iconscout/react-unicons';
+import { UilLocationPoint } from '@iconscout/react-unicons';
   import axios from 'axios';
  import  WeatherInfo  from "./WeatherInfo";
 
@@ -48,7 +48,7 @@ if (weatherData.ready) {
           <form onSubmit={handleSubmit}>
         <div className="row">
 
-          <div className="col-9">
+          <div className="col-6">
             <input type="search" placeholder="Search a city" className="form-control" 
             autoComplete="off" autoFocus='on' onChange={handleCityChange}/>
           </div>
@@ -58,7 +58,10 @@ if (weatherData.ready) {
          
           </div>
 
-         
+          <div className="col-3">
+           <button className="btn btn-primary w-100" autoFocus='on' >
+            Current <UilLocationPoint size={18}/></button> 
+          </div>
 
         </div>
       </form>

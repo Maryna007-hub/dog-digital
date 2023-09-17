@@ -24,9 +24,21 @@ if (loaded) {
    <div className='WeatherForecast'>
 <div className='row'>
   <div className='col'>
-  <WeatherForecastDay data={forecast[0]}/>   
+  <WeatherForecastDay data={forecast[1]}/>   
   </div>
- 
+  <div className='col'>
+  <WeatherForecastDay data={forecast[9]}/>   
+  </div>
+  <div className='col'>
+  <WeatherForecastDay data={forecast[17]}/>   
+  </div>
+  <div className='col'>
+  <WeatherForecastDay data={forecast[25]}/>   
+  </div>
+  <div className='col'>
+  <WeatherForecastDay data={forecast[33]}/>   
+  </div> 
+
 </div>
     </div>
     ); 
@@ -36,7 +48,7 @@ if (loaded) {
   let longitude = props.coordinates.lon;
   let latitude = props.coordinates.lat;
 let apiUrl = `https://api.openweathermap.org/data/2.5/forecast?
-lat=${latitude}&lon=${longitude}&cnt=4&appid=${apiKey}&units=metric`;
+lat=${latitude}&lon=${longitude}&appid=${apiKey}&units=metric`;
 
 axios.get(apiUrl).then(handleResponse); 
 

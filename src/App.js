@@ -7,7 +7,7 @@ function App() {
     <div className="App">
       <div className='container'>
         
-         <Weather defaultCity='Oslo'/>
+         <Weather defaultCity='Doha'/>
           <footer>
           This project was coded by 
            <a href='/'> Maryna Holinka </a>

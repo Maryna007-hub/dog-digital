@@ -40,19 +40,19 @@ if (loaded) {
    <div className='WeatherForecast'>
 <div className='row'>
   <div className='col'>
-  <WeatherForecastDay data={forecast[1]}/>   
+  <WeatherForecastDay data={forecast[0]}/>   
   </div>
   <div className='col'>
-  <WeatherForecastDay data={forecast[9]}/>   
+  <WeatherForecastDay data={forecast[7]}/>   
   </div>
   <div className='col'>
-  <WeatherForecastDay data={forecast[17]}/>   
+  <WeatherForecastDay data={forecast[15]}/>   
   </div>
   <div className='col'>
-  <WeatherForecastDay data={forecast[25]}/>   
+  <WeatherForecastDay data={forecast[23]}/>   
   </div>
   <div className='col'>
-  <WeatherForecastDay data={forecast[33]}/>   
+  <WeatherForecastDay data={forecast[31]}/>   
   </div> 
 
 </div>
